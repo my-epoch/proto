@@ -1,0 +1,22 @@
+syntax = "proto3";
+package my_epoch.proto;
+option go_package = "/;article_service_api";
+
+service Article {
+  rpc GetList(PaginationRequest) returns (GetListResponse) {};
+}
+
+message PaginationRequest {
+  int32 page = 1;
+  int32 per_page = 2;
+}
+
+message ArticleShort {
+  string title = 1;
+  string short_description = 2;
+  string image_url = 3;
+}
+
+message GetListResponse {
+  repeated ArticleShort articles = 1;
+}
