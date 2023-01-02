@@ -1,6 +1,6 @@
 syntax = "proto3";
 package my_epoch.proto;
-option go_package = "/;article_service_api";
+option go_package = "/;api";
 
 service Article {
   rpc GetList(PaginationRequest) returns (GetListResponse) {};
