@@ -1,4 +1,4 @@
-module github.com/my-epoch/proto/article/api
+module github.com/my-epoch/proto/article_gen
 
 go 1.19
 

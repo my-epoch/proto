@@ -4,7 +4,7 @@
 // - protoc             v3.21.6
 // source: article/article_service.proto
 
-package api
+package article_api
 
 import (
 	context "context"
